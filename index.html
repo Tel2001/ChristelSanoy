@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="TEL NEW STYLE-2025.jpg">
+</head>
+<body>
+
+    <header>
+        <div class="logo">DISENYO NI TEL</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#contact-section" class="mobile-hire-btn">Hire Me</a></li> <!-- Hidden on desktop -->
+            </ul>
+        </nav>
+
+        <a href="#contact-section" class="hire-btn" style="text-decoration: none;">Hire Me </a><!-- Visible only on desktop -->
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()" >☰</div>
+    </header>
+
+    <section class="hero-section" id="hero-section">
+        <div class="hero-content">
+            <h1 class="heading-title">IDEATE. ENVISION. CRAFT.</h1>
+            <!--<img src="bg.png" alt="Creative Design" class="hero-image">-->
+        </div>
+    </section>    
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects-section">
+        <div class="container-project">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card" id="projectCard">
+                    <img src="Projects/ECE.png" alt="Project 1">
+                    <h3>ECE COPY AND PRINTING SERVICES</h3>
+                    <p>Logo Design</p>
+                </div>
+                <div class="project-card" id="projectCard2">
+                    <img src="Projects/SUGAR.png" alt="Project 2">
+                    <h3>Sugar</h3>
+                    <p>Logo Design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="Projects/CLEAR.png" alt="Project 3">
+                    <h3>CLEAR</h3>
+                    <p>Logo Design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="Projects/BIPNOY.png" alt="Project 3">
+                    <h3>BiPinoy</h3>
+                    <p>Logo Design.</p>
+                </div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="Projects/MENSWEAR.png" alt="Project 1">
+                    <h3>Menswear</h3>
+                    <p>Logo Design</p>
+                </div>
+                <div class="project-card">
+                    <img src="Projects/SHOPPERSVILLE.png" alt="Project 2">
+                    <h3>Shoppersville</h3>
+                    <p>Logo Design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="Projects/asdfsdf.png" alt="Project 3">
+                    <h3>M4 GADGETS</h3>
+                    <p>Logo Design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="Projects/PIXELPAPER.png" alt="Project 3">
+                    <h3>Pixel Paper</h3>
+                    <p>Logo Design.</p>
+                </div>
+            </div>
+            <!-- See More Button 
+            <div class="see-more-container">
+                <a href="#" class="see-more-btn">See More</a>
+            </div>
+            -->
+        </div>
+        
+    </section>
+    <!-- Full-Screen Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2 class="modal-title">Project Details</h2>
+            <p class="modal-text">
+                This is a detailed view of the project. You can add images, descriptions, links, or anything you want here.
+                Scroll down for more content!
+            </p>
+            <p class="modal-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac ligula id elit tincidunt pharetra.
+                Suspendisse potenti. Fusce in justo odio. Proin suscipit, odio at bibendum tincidunt, magna libero elementum felis,
+                ac viverra ligula odio id purus.
+            </p>
+            <p class="modal-text">
+                Aenean sollicitudin quam vitae libero condimentum, nec congue lorem volutpat. In hac habitasse platea dictumst.
+                Phasellus laoreet lacus at orci scelerisque, nec facilisis nunc condimentum. Integer facilisis urna et nisi congue, 
+                et euismod nulla sagittis. 
+            </p>
+            <p class="modal-text">
+                More content... You can add endless descriptions or detailed information here. Scroll the modal for a better look.
+            </p>
+        </div>
+    </div>
+    <!-- About Section -->
+    <section class="about-section" id="about-section">
+        <div class="about-container">
+            <!-- First Column: Image and Short Description -->
+            <div class="about-left">
+                <img src="Projects/profile.png" alt="Your Professional Image" class="profile-image">
+                <p class="about-description">I'm Christel Sanoy, a passionate graphic designer with two years of experience creating visually compelling and effective design materials that communicate ideas and leave a lasting impact.<br><br>
+                    My expertise lies in logo design, shirt design, social media graphics, and printable materials. I’m currently expanding my skills into UI and UX design to broaden my creative scope and enhance my ability to craft seamless digital experiences.<br><br>
+                    I believe in blending aesthetics with functionality, focusing on designs that not only look great but also serve a purpose. Whether it’s constructing a logo, designing eye-catching apparel, or creating user-friendly interfaces, my goal is to deliver projects that truly connect with the target audience and leave a lasting impression.
+                    Feel free to explore my portfolio and reach out if you’d like to collaborate or discuss potential projects!</p>
+            </div>
+            
+            <!-- Second Column: Design Approach -->
+            <div class="about-right">
+                <div class="design-approach">
+                    <h1 style="font-size: 2rem;">MY DESIGN APPROACH</h1>
+                    <br>
+                    <div class="approach-item">
+                        <div style="display: none;">
+                            <img src="Logo/ideate.png" alt="Your Professional Image" class="approach-image">
+
+                        </div>
+                        <div >
+                            <h2 style="font-size: 2rem;">Ideate</h2>
+                            <br>
+                            <p style="font-size: 18px;">Every successful project starts with a deep understanding of the brand. I take time to thoroughly research and analyze the brand’s identity, values, and message to ensure my design aligns with its core essence. This includes conducting client interviews to understand their vision, goals, and target audience, as well as examining the project description to gather key information that will guide the creative process.</p>
+                            <div style="display: none;font-size: 14px;">
+                                <ul>
+                                    <li>Conducting interviews with clients to gain insight into their vision, goals, and target audience.</li>
+                                    <li>Researching the project description to gather essential information that will guide the creative process.</li>
+                                    <li>Utilizing word association techniques to generate ideas that are conceptually aligned with the brand. This method is especially effective in logo design, helping to create visual identities that resonate with the brand’s essence.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                
+                    <div class="approach-item">
+                        <div style="display: none;">
+                            <img src="Logo/ENVISION.png" alt="Your Professional Image" class="approach-image">
+                        </div>
+                        <div>
+                            <h3 style="font-size: 2rem;">Envision</h3>
+                            <br>
+                            <p style="font-size: 18px;">With the groundwork in place, I begin translating ideas into initial designs, focusing on structure, 
+                                composition, and visual flow. This phase involves sketching rough concepts to explore various possibilities and creating wireframes or layout drafts to establish a clear design framework, 
+                                ensuring both aesthetic appeal and functionality.</p>
+                            <div style="display: none;">
+                                <ul>
+                                    <li>Sketching rough concepts to explore various possibilities.</li>
+                                    <li>Creating wireframes to lay the groundwork for the design, particularly in UI/UX projects, ensuring functionality and user-friendly navigation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <br>
+                    <div class="approach-item">
+                        <img src="Logo/CRAFT.png" alt="Your Professional Image" class="approach-image" style="display: none;">
+
+                        <div>
+                            <h3 style="font-size: 2rem;">Craft</h3>
+                            <br>
+                            <p style="font-size: 18px;">Once the vision is defined, I move on to crafting the final design, refining and polishing the chosen concept using professional design tools. Whether it’s branding materials, digital graphics, or print assets, I strive to create impactful and meaningful designs that effectively communicate the brand’s message.</p>
+                        </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section" >
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2 style="font-size: 2rem;">CONTACT</h2>
+                <br>
+                <p>
+                    I’d love to hear from you! Whether you're looking to collaborate on a project, have questions, or just want to say hello,
+                    feel free to get in touch. Let’s create something amazing together!
+                </p>
+                <br>
+                <div class="contact-details">
+                    <div class="details-container">
+                        <h3>Message Me</h3>
+                        <p>Email: sanoychristel@gmail.com</p>
+                    </div>
+                    <br>
+                    <div class="details-container">
+                        <h3>Call Me</h3>
+                        <p>+639157149070</p>
+                    </div>
+                </div>
+                <br>
+                <h3>Social Media Links</h3>
+                <div class="social-media">
+                    <div class="social-container">
+                        <img src="Logo/FACEBOOK.png" alt="Logo">
+                        <a href="https://www.facebook.com/ChristelSanoy/">/ChristelSanoy</a>
+                    </div>
+                    <div class="social-container">
+                        <img src="Logo/BEHANCE.png" alt="Logo">
+                        <a href="https://www.behance.net/christelsanoy">/christelsanoy</a>
+                    </div>
+                    <!--
+                    <div class="social-container">
+                        <img src="Logo/LINKIN.png" alt="Logo">
+                        <a href="https://www.linkedin.com/in/christel-sanoy-3b0041184/">/christel-sanoy</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="contact-right" >
+                <div class="contact-form">
+                    <h3>Direct Message</h3>
+                    <br>
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email / Number" required>
+                        <textarea placeholder="Your Message" name="message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div id="success-message" class="feedback-popup">Message Sent Successfully! 🎉</div>
+            <div id="error-message" class="feedback-popup">Failed to send message. Try again later. 😞</div>
+        </section>
+    </section>
+    <footer>
+        <div class="logo-2">DISENYO NI TEL</div>
+       <p> @Christel J. Sanoy 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS properly with only the public key (as a string)
+            emailjs.init("_4mfIBVN8-eVLp5TB");  // Public key goes here directly
+        })();
+    </script>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();  // Prevent default form submission
+    
+                emailjs.sendForm('service_twueqwa', 'template_et7pq2j', this)
+                    .then(() => {
+                        showFeedback('success-message');
+                        this.reset();  // Clear the form after success
+                    }, (error) => {
+                        showFeedback('error-message');
+                        console.error('FAILED...', error);
+                    });
+            });
+    
+            function showFeedback(id) {
+                const message = document.getElementById(id);
+                message.classList.add('show');
+                setTimeout(() => message.classList.remove('show'), 3000);  // Hide after 3 seconds
+            }
+        }
+    </script>
+
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            document.querySelectorAll("section").forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                // Adjust threshold to activate last section properly
+                if (window.pageYOffset >= sectionTop - 200 && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            // Remove 'active' from all links and add it to the current section's link
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>
