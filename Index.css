@@ -98,13 +98,23 @@ body{
 }
 
 .hire-btn-container{
-    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hire-btn-container > button{
+.hire-btn-container>a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0;
+    height: auto;
+}
+
+
+.hire-btn-container >a> button{
     background-color: var(--primary-color);
     border: none;
     padding: 8px 18px;
@@ -112,6 +122,8 @@ body{
     border-radius: 4px;
     color: white;
     transition: .5s;
+
+    
 }
 
 .hire-btn-container > button:hover{
