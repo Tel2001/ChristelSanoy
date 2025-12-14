@@ -1,0 +1,148 @@
+let click = false;
+
+function HamburgerBtnClick(){
+    if (click === false) {
+        document.getElementById('nav-links').classList.remove('display-navlinks');
+        document.getElementById('nav-links').classList.add('nav-links-show-anim');
+        document.getElementById('nav-links').classList.remove('nav-links-hide-anim');
+        click = true;
+    }else if(click === true){
+        
+        document.getElementById('nav-links').classList.remove('nav-links-show-anim');
+        document.getElementById('nav-links').classList.add('nav-links-hide-anim');
+        
+        setTimeout(()=>{
+             document.getElementById('nav-links').classList.add('display-navlinks');
+        },900)
+        click = false;
+    }
+}
+
+let darkmode = false;
+
+function ThemeToggle(){
+    if(darkmode === false){
+        
+        document.getElementById('sun').style.backgroundColor ='white';
+
+        document.getElementById('ray-1').classList.add('ray-animation');
+        document.getElementById('ray-2').classList.add('ray-animation');
+        document.getElementById('ray-3').classList.add('ray-animation');
+        document.getElementById('ray-4').classList.add('ray-animation');
+        document.getElementById('ray-5').classList.add('ray-animation');
+        document.getElementById('ray-6').classList.add('ray-animation');
+        document.getElementById('ray-7').classList.add('ray-animation');
+        document.getElementById('ray-8').classList.add('ray-animation');
+
+        setTimeout(()=>{
+            document.getElementById('ray-1').style.display='none';
+            document.getElementById('ray-2').style.display='none';
+            document.getElementById('ray-3').style.display='none';
+            document.getElementById('ray-4').style.display='none';
+            document.getElementById('ray-5').style.display='none';
+            document.getElementById('ray-6').style.display='none';
+            document.getElementById('ray-7').style.display='none';
+            document.getElementById('ray-8').style.display='none';
+
+            document.getElementById('ray-1').classList.remove('ray-animation');
+            document.getElementById('ray-2').classList.remove('ray-animation');
+            document.getElementById('ray-3').classList.remove('ray-animation');
+            document.getElementById('ray-4').classList.remove('ray-animation');
+            document.getElementById('ray-5').classList.remove('ray-animation');
+            document.getElementById('ray-6').classList.remove('ray-animation');
+            document.getElementById('ray-7').classList.remove('ray-animation');
+            document.getElementById('ray-8').classList.remove('ray-animation');
+        },400);
+
+        document.getElementById('moon').classList.add('moon-2');
+
+        document.getElementById('linkedin').style.backgroundImage = "url('./assets/icon/linkedin-white.png')";
+        document.getElementById('behance').style.backgroundImage = "url('./assets/icon/behance-white.png')";
+        document.getElementById('github').style.backgroundImage = "url('./assets/icon/github-white.png')";
+        document.getElementById('facebook').style.backgroundImage = "url('./assets/icon/facebook-white.png')";
+        
+        darkmode = true;
+        document.documentElement.style.setProperty("--primary-background-color", "#232528");
+        document.documentElement.style.setProperty("--primary-text-color", "white");
+
+    }else if(darkmode === true){
+        document.getElementById('moon').classList.remove('moon-2');
+        document.getElementById('ray-1').style.display='inline';
+        document.getElementById('ray-2').style.display='inline';
+        document.getElementById('ray-3').style.display='inline';
+        document.getElementById('ray-4').style.display='inline';
+        document.getElementById('ray-5').style.display='inline';
+        document.getElementById('ray-6').style.display='inline';
+        document.getElementById('ray-7').style.display='inline';
+        document.getElementById('ray-8').style.display='inline';
+
+        document.getElementById('ray-1').classList.add('ray-animation-2');
+        document.getElementById('ray-2').classList.add('ray-animation-2');
+        document.getElementById('ray-3').classList.add('ray-animation-2');
+        document.getElementById('ray-4').classList.add('ray-animation-2');
+        document.getElementById('ray-5').classList.add('ray-animation-2');
+        document.getElementById('ray-6').classList.add('ray-animation-2');
+        document.getElementById('ray-7').classList.add('ray-animation-2');
+        document.getElementById('ray-8').classList.add('ray-animation-2');
+
+         setTimeout(()=>{
+
+            document.getElementById('ray-1').classList.remove('ray-animation-2');
+            document.getElementById('ray-2').classList.remove('ray-animation-2');
+            document.getElementById('ray-3').classList.remove('ray-animation-2');
+            document.getElementById('ray-4').classList.remove('ray-animation-2');
+            document.getElementById('ray-5').classList.remove('ray-animation-2');
+            document.getElementById('ray-6').classList.remove('ray-animation-2');
+            document.getElementById('ray-7').classList.remove('ray-animation-2');
+            document.getElementById('ray-8').classList.remove('ray-animation-2');
+        },400);
+
+        document.getElementById('linkedin').style.backgroundImage = "url('./assets/icon/linkedin.png')";
+        document.getElementById('behance').style.backgroundImage = "url('./assets/icon/behance.png')";
+        document.getElementById('github').style.backgroundImage = "url('./assets/icon/github.png')";
+        document.getElementById('facebook').style.backgroundImage = "url('./assets/icon/facebook.png')";
+        
+        document.documentElement.style.setProperty("--primary-background-color", "white");
+        document.getElementById('moon').classList.remove('moon-2');
+         document.getElementById('sun').style.backgroundColor ='#232528';
+         document.documentElement.style.setProperty("--primary-text-color", "#232528");
+        
+        darkmode = false;
+    }
+}
+
+function LinkedinHover(){
+    document.getElementById('linkedin-link').style.display = 'inline';
+}
+
+function LinkedinMouseOut(){
+    document.getElementById('linkedin-link').style.display = 'none';
+}
+
+
+function GithubHover(){
+    document.getElementById('github-link').style.display = 'inline';
+}
+
+function GithubMouseOut(){
+    document.getElementById('github-link').style.display = 'none';
+}
+
+
+function BehanceHover(){
+    document.getElementById('behance-link').style.display = 'inline';
+}
+
+function BehanceMouseOut(){
+    document.getElementById('behance-link').style.display = 'none';
+}
+
+function FacebookHover(){
+    document.getElementById('facebook-link').style.display = 'inline';
+}
+
+function FacebookMouseOut(){
+    document.getElementById('facebook-link').style.display = 'none';
+}
+
+document.getElementById().addEventListener('')

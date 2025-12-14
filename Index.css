@@ -1,0 +1,359 @@
+:root{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;    
+    --primary-color: #1A8EE3;
+    --primary-background-color: white;
+    --primary-text-color: #232528;
+    bottom: 0;
+}
+
+.main-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #232528;
+    top: -100%;
+    left: 100%;
+    border-radius: 100%;
+    
+    animation-name: main-background-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    display: none;
+}
+
+
+
+@keyframes main-background-anim {
+    from{}
+    to{top: 0;left: 0;border-radius: 0;}
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: var(--primary-background-color);
+    transition: 1s;
+    scroll-behavior: smooth;
+    bottom: 0;
+}
+
+.navigation-container{
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 40px;
+    max-width: 1400px;
+    z-index: 2;
+    transition: .5s;
+}
+.navigation-container-blur{
+    z-index: 1;
+    top: -10px;
+    transition: .5s;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+   
+}
+.logo-container{
+    color: var(--primary-text-color);
+}
+
+.nav-link-container{
+    z-index: 1;
+}
+
+.nav-link-container > ul{
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-link-container > ul > li {
+    list-style-type: none;
+    margin: 0 8px;
+    padding: 8px 8px;
+    border-bottom: 4px solid var(--primary-background-color);
+    transition: 1s;
+
+}
+
+.nav-link-container > ul > li:hover{
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.nav-link-container > ul > li > a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: .5s;
+}
+
+.hire-btn-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hire-btn-container > button{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    transition: .5s;
+}
+
+.hire-btn-container > button:hover{
+    opacity: .6;
+    transition: .5s;
+}
+
+.hamburger-btn-container{
+    width: 32px;
+    height: 32px;
+    background-image: url('./assets/icon/hamburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+.hamburger-btn-container:hover{
+    background-image: url('./assets/icon/hamburger-hover.png');
+    transition: .5s;
+    color: #232528;
+}
+
+.side-btn-container{
+    display: flex;
+}
+
+.theme-mode-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.ray{
+    width: 4px;
+    height: 4px;
+    background-color: #232528;
+    margin: 10px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: -1;
+}
+
+.ray-1{
+    margin-top: -8px;
+    margin-left: 7px;
+}
+
+.ray-2{
+    margin-top: -4px;
+    margin-left: 18px;
+}
+
+.ray-3{
+    margin-top: 8px;
+    margin-left: 22px;
+}
+
+.ray-4{
+    margin-top: 18px;
+    margin-left: 17px;
+}
+
+.ray-5{
+    margin-top: 22px;
+    margin-left: 7px;
+}
+
+.ray-6{
+    margin-top: 18px;
+    margin-left: -5px;
+}
+
+.ray-7{
+    margin-top: 8px;
+    margin-left: -9px;
+}
+
+.ray-8{
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+.ray-animation{
+    animation-name: rays-anim;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+
+.ray-animation-2{
+    animation-name: rays-anim;
+    animation-duration: .5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rays-anim {
+    from{
+
+    }
+    to{
+        margin-top: 8px;
+        margin-left: 6px;
+        background-color: white;
+    }
+}
+
+.sun{
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #232528;
+    z-index: 2;
+}
+
+.moon{
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    
+    position: absolute;
+    transition: 1s;
+}
+
+.moon-1{
+    background-color: white;
+    margin-top: -40px;
+    margin-left: 20px;
+    transition: 1s;
+    
+}
+
+.moon-2{
+    
+    background-color: #232528;
+    margin-top: -22px;
+    margin-left: 4px;
+    transition: 1s;
+   
+}
+
+
+@media (max-width:1400px) {
+    .navigation-container{
+        padding: 8px 200px;
+        width: 90%;
+    }
+}
+
+@media (max-width:800px) {
+    .display-navlinks{
+        display: none;
+    }
+    .navigation-container{
+        padding: 0 60px;
+    }
+    .nav-link-container{
+        position: absolute;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        
+        top:0;
+        left: 0;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: #232528;
+    }
+
+    .nav-links-show-anim{
+        animation-name: nav-links-anim;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .nav-link-container > ul {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .nav-link-container > ul > li{
+        border-bottom: 4px solid #232528;
+        
+    }
+
+    .nav-link-container > ul > li > a{
+        color: white;
+        transition: .5s;
+    }
+
+    
+    .hire-btn-container{
+        display: none;
+    }
+
+    .hamburger-btn-container{
+        background-image: url('./assets/icon/hamburger.svg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+        transition: .5s;
+    }
+
+    .hamburger-btn-container:hover{
+        background-image: url('./assets/icon/hamburger-hover.png');
+        transition: .5s;
+    }
+
+
+    @keyframes nav-links-anim {
+        0%{
+            margin-left: 600px;
+        }
+        100%{
+            
+        }
+    }
+
+    .nav-links-hide-anim{
+        
+        animation-name: nav-links-hide-anim;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes nav-links-hide-anim {
+        0%{
+            
+        }
+        100%{
+            margin-left: 600px;
+        }
+    }
+    
+
+ 
+    
+}
