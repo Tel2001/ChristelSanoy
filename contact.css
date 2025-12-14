@@ -37,19 +37,19 @@
 }
 
 #contact-linkedin{
-    background-image: url('/assets/icon/linkedin.png');
+    background-image: url('./assets/icon/linkedin.png');
 }
 
 #contact-github{
-    background-image: url('/assets/icon/github.png');
+    background-image: url('./assets/icon/github.png');
 }
 
 #contact-behance{
-    background-image: url('/assets/icon/behance.png');
+    background-image: url('./assets/icon/behance.png');
 }
 
 #contact-facebook{
-    background-image: url('/assets/icon/facebook.png');
+    background-image: url('./assets/icon/facebook.png');
 }
 .contact-container-child-2{
     display: flex;
@@ -132,4 +132,5 @@ footer > p{
     .contact-aside{
         width: 100%;
     }
+
 }
