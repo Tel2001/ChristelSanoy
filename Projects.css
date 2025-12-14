@@ -146,10 +146,17 @@ a:focus {
     z-index: -2;
 }
 
-#eirms, #eirms-2{
+#eirms{
     background-image: url('./assets/Projects/EIRMS.png');
     background-size: 280px;
     background-repeat: no-repeat;
+}
+#eirms-2{
+     background-image: url('./assets/Projects/EIRMS.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     top: 120%;
 }
 .project-container-2:hover .project-overview-2 {
     transition: .5s;
