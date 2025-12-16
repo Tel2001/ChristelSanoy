@@ -299,7 +299,7 @@ body{
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
-        
+        padding-left:40px;
         top:0;
         left: 0;
         height: 100vh;
@@ -377,4 +377,5 @@ body{
     
    
     
+
 }
