@@ -1,0 +1,122 @@
+:root{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;    
+    --primary-color: #1A8EE3;
+    --primary-background-color: white;
+    --primary-text-color: #232528;
+    bottom: 0;
+}
+
+.body{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.project-content{
+    width: 90%;
+}
+
+.project-content-1 > a{
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    color: #232528;
+    text-decoration: none;
+}
+
+.back-icon-container{
+    width: 32px;
+    height: 32px;
+    background-image: url('./assets/icon/back.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-content-3{
+    height: 70vh;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    padding-bottom: 20px;
+}
+
+.project-image{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    height: inherit;
+    margin-right: 20px;
+}
+
+.project-image-1{
+    background-image: url('./assets/Projects/EdgeBook.png');
+    min-width: 600px;
+}
+.project-image-2{
+    background-image: url('./assets/Projects/EdgeBook-white.png');
+    min-width: 600px;
+}
+.project-image-3{
+    background-image: url('./assets/Projects/EdgeBook-mobile.png');
+    min-width: 300px;
+}
+
+.project-image-container{
+    height: inherit;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-image-4{
+    background-image: url('./assets/Projects/DASHBOARD.png');
+    background-position: center;
+    min-width: 460px;
+    height: 48%;
+}
+
+.project-image-5{
+    background-image: url('./assets/Projects/DASHBOARD - Basic Plan.png');
+    background-position: center;
+    min-width: 460px;
+    height: 48%;
+}
+
+.project-image-6{
+    background-image: url('./assets/Projects/TRADE MANAGEMENT.png');
+    background-position: center;
+    min-width: 460px;
+    height: 48%;
+}
+
+.project-image-7{
+    background-image: url('./assets/Projects/DASHBOARD-1.png');
+    background-position: center;
+    min-width: 460px;
+    height: 48%;
+   
+}
+::-webkit-scrollbar {
+  margin-top: 40px;
+  width: 10px;
+  height: 8px;
+  background-color: #ececec;
+   border-radius: 4px;
+}
+.project-content-3::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+  height: 1px;
+}
