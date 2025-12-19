@@ -10,16 +10,23 @@
     <link rel="stylesheet" href="Projects.css">
     <link rel="stylesheet" href="opening.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="alert.css">
     <script src="Index.js"></script>
 </head>
 <body id="body">
+    <div class="alert-container hide" id="alert-container">
+        <div id="message-feedback">
+            <div class="close-container" id="close-container"></div>
+            <p id="message-text">Sample!</p>
+        </div>
+    </div>
     <div class="cover" id="cover"></div>
     <div class="opening-container show-anim" id="opening">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none">
             <defs>
                 <mask id="text-mask">
                     <rect width="100" height="100" fill="white" />
-                    <text x="50" y="55"
+                    <text  x="50" y="55"
                         text-anchor="middle"
                         dominant-baseline="middle"
                         font-size="20"
@@ -31,7 +38,7 @@
                 </mask>
             </defs>
 
-            <rect width="100" height="100" fill="rgba(0,0,0,.85)" mask="url(#text-mask)">
+            <rect width="100" height="100%" fill="rgba(0,0,0,.85)" mask="url(#text-mask)">
         </svg>
     </div>
     <div class="main-background"></div>
@@ -324,7 +331,7 @@
                     <p style="color: red;display: none;">Sorry for the inconvenience. Direct messages are currently unavailable. Kindly contact me through my other accounts. </p>
                     <form id="contact-form">
                         <input type="text" name="name" placeholder="Your Name " required >
-                        <input type="email" name="email" placeholder="Your Email / Number" required >
+                        <input type="email" name="email" placeholder="Your Email" required >
                         <textarea placeholder="Your Message" name="message" required rows="9" ></textarea>
                         <button type="submit" >Send Message</button>
                     </form>
@@ -413,18 +420,27 @@
       
     })
 
-
+    function ShowFeedback(messageFeedback){
+        document.getElementById('alert-container').classList.remove('hide');
+        document.getElementById('message-text').textContent = messageFeedback;
+    }
     
+  
+    
+    document.getElementById('close-container').addEventListener('click',()=>{
+         document.getElementById('alert-container').classList.add('hide');
+    });
+
      window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();  // Prevent default form submission
                 console.log('Test');
                 emailjs.sendForm('service_twueqwa', 'template_et7pq2j', this)
                     .then(() => {
-                        //showFeedback('success-message');
+                        ShowFeedback('Thank you for your message. I will send my response to the account you provided.');
                         this.reset();  // Clear the form after success
                     }, (error) => {
-                        //showFeedback('error-message');
+                        ShowFeedback('Sorry for the inconvenience. Kindly try again.');
                         alert('FAILED...', error);
                     });
             });
