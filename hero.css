@@ -485,18 +485,18 @@
         height: 70vh;
     }
     .tools-container, .background-container{
-        margin-top: -100px;
+        margin-top: 10px;
         padding: 0;
         margin-bottom: 0;
     }
     .brief-about-me-container{
         width: 90%;
-        margin: -200px 0 0 0;
+        margin: 10px 0 0 0;
         padding: 0;
         align-items: center;
     }
     .social-media-accs-container{
-        margin: -120px 0 0 0;
+        margin: 10px 0 0 0;
         padding: 0;
     }
 }
