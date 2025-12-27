@@ -482,22 +482,21 @@
     .hero-container{
         margin: 0;
         padding: 0;
-        
-        height: 60vh;
+        height: 70vh;
     }
     .tools-container, .background-container{
-        margin-top: -180px;
+        margin-top: -100px;
         padding: 0;
         margin-bottom: 0;
     }
     .brief-about-me-container{
         width: 90%;
-        margin: -300px 0 0 0;
+        margin: -200px 0 0 0;
         padding: 0;
         align-items: center;
     }
     .social-media-accs-container{
-        margin: -200px 0 0 0;
+        margin: -120px 0 0 0;
         padding: 0;
     }
 }
