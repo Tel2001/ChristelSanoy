@@ -150,6 +150,17 @@
     height: 52px;
 }
 
+.open-icon{
+    width: 32px;
+    height: 32px;
+    
+    background-image: url('./assets/icon/open.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
 @media (max-width:800px) {
 
     .opening-line{
@@ -210,5 +221,11 @@
     .my-tech-stack{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width:360px) {
+    .about-me-container{
+     
     }
 }
