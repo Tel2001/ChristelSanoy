@@ -482,7 +482,7 @@
     .hero-container{
         margin: 0;
         padding: 0;
-        height: 70vh;
+        height: 100vh;
     }
     .tools-container, .background-container{
         margin-top: 10px;
@@ -496,7 +496,7 @@
         align-items: center;
     }
     .social-media-accs-container{
-        margin: 10px 0 0 0;
+        margin: 100px 0 0 0;
         padding: 0;
     }
 }
